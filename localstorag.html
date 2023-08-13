@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!--     
+לתת למשתמש לבחור צבע ולשמור אותו בלחיצת כפתור
+כאשר המשתמש פותח את הדף שוב, הדף יהיה באותו הצבע -->
+
+    type your name
+    <input type="text" id="button1"> </input>
+    <button onclick="setlocal(button1.value)">sendname </button>
+    
+    <!-- <button onclick="setlocal()">set</button>
+    <button onclick="getlocal()">get</button> -->
+    <script>
+
+
+    
+
+        function setlocal() {
+            localStorage.setItem("name", button1.value)
+          
+
+        }
+
+        // function getlocal() {
+        //     console.log(localStorage.getItem("ket", "value"));
+          
+
+        // }
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

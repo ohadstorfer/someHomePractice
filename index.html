@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="StartMove(setInterval(StartMove, 100))">start move!</button>
+    <button onclick="clearInterval(StartMove)">stop move!</button>
+    <div style="background-color: aqua; position:absolute;" id="thatdiv">very good div </div>
+
+    <script>
+        let i = 50
+        let x = 10
+        function StartMove() {
+
+
+            if (i > window.innerWidth-20) {
+                i ==-i
+            }
+            i += 50
+            thatdiv.style.left = i + "px"
+                
+            
+          
+            
+
+           
+        }
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

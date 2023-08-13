@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Box to Function</title>
+</head>
+<body>
+    <h1>Enter Something</h1>
+    <label for="userInput">Type here:</label>
+    <input type="text" id="userInput">
+    <button id="submitButton">Submit</button>
+    <p id="output"></p>
+    
+    <script>
+        // This part runs when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            const userInput = document.getElementById("userInput");
+            const submitButton = document.getElementById("submitButton");
+            const output = document.getElementById("output");
+
+            submitButton.addEventListener("click", function () {
+                const inputValue = userInput.value;
+                output.textContent = "You typed: " + inputValue;
+            });
+        });
+    </script>
+</body>
+</html>
